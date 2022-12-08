@@ -1,0 +1,42 @@
+.footer {
+  padding-top: 10px;
+  background-color:#F9F6F4 ;
+  height: 150px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  color: #3f3f3f;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  a{
+    text-decoration: none;
+    color: #3f3f3f
+  }
+  .social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .logofull {
+      width: 220px;
+      height: 30px;
+    }
+    .picto {
+      width: 20px;
+    }
+    
+  }
+  .link-section{
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .contact-section{
+    font-size: 20px;
+    text-align: start;
+  }
+  
+}
