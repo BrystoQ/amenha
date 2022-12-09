@@ -14,6 +14,7 @@ import chaise from "../../assets/chaise.jpg";
 import bureau from "../../assets/bureau.jpg";
 import armoire from "../../assets/armoire.jpg";
 import solution from "../../assets/solution.png";
+import video1 from "../../assets/video.mp4";
 
 const Homepage = () => {
   const [values, setValues] = React.useState({
@@ -123,16 +124,17 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-      {/* <div className="youtube--embed">
-        <iframe
-          width="720"
-          height="405"
-          src=""
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-        ></iframe>
-      </div> */}
+      <div className="youtube--embed">
+        <div>
+          <video
+            src={video1}
+            width="281"
+            height="500"
+            controls="controls"
+            autoplay="true"
+          />
+        </div>
+      </div>
       <div className="newsletter">
         <form onSubmit={() => handleSubmit}>
           <label>Inscrivez vous à notre newsletter ?</label>
