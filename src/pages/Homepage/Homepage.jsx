@@ -14,24 +14,6 @@ import solution2 from "../../assets/solution2.png";
 import Newsletter from "../../components/Newsletter/Newsletter";
 
 const Homepage = () => {
-  const [values, setValues] = React.useState({
-    showPassword: false,
-  });
-
-  const handleChange = (name) => (event) => {
-    setValues({
-      ...values,
-      [name]: name === "cgu" ? event.target.checked : event.target.value,
-    });
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    console.log(values, event);
-    this.setState({ showMessage: !this.state.showMessage });
-  };
-
   return (
     <div className="body">
       <div className="container--first">
