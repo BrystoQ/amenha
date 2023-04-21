@@ -4,12 +4,13 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 30vh;
+  height: 40vh;
   background: #9d8a74;
   form {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    row-gap: 20px;
     label {
       color: white;
       font-family: "Playfair Display";
@@ -31,4 +32,13 @@
       border-radius: 25px !important;
     }
   }
+}
+
+.error {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.errorNotDisplay {
+  display: none;
 }
