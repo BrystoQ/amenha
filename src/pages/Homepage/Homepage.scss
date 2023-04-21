@@ -1,24 +1,27 @@
 .container--first {
-  background: #EEEBEB;
-  height: 60vh;
+  background: #eeebeb;
+  height: 70vh;
   position: relative;
   img {
     position: absolute;
-    height: 60vh;
+    height: 70vh;
     width: 100vw;
   }
-  .text{
+  .text {
     width: 700px;
-    padding: 30px;
-    height: 35vh;
+    padding: 20px;
     background: rgb(245, 245, 245, 0.9);
-    border-radius: 25px;
     position: absolute;
-    bottom:10%;
+    bottom: 0;
     right: 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    p {
+      font-size: 30px;
+      font-weight: bold;
+    }
   }
 }
 
@@ -26,24 +29,22 @@
   margin-top: 10%;
   margin-bottom: 8%;
   display: flex;
-  .text{
+  .text {
     margin: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     .button {
-      width: 200px;
       align-self: end;
       margin: 20px;
-      width: 250px!important;
       padding: 10px;
-      border-radius: 15px!important;
+      border-radius: 15px !important;
     }
   }
-  img{
-    border-radius: 0px 25px 25px 0px;
+  img {
     width: 778px;
-    height: 450px;
+    -webkit-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -53,7 +54,7 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  .picture--inspiration{
+  .picture--inspiration {
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -66,125 +67,87 @@
   }
 }
 
-.container--meuble {
-  justify-content: center;
-
-  .picture--meubles{
-    display: flex;
-    justify-content: center;
-    .meuble {
-      position: relative;
-      height: 360px;
-      margin: 20px;
-      img {
-        border-radius: 25px;
-        height: 360px;
-        width: 234px;
-       };
-       .text{
-          position: absolute;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          text-align: center;
-          bottom: 0px;
-          background: rgb(157, 138, 116, 0.8);
-          color: white;
-          font-weight: bold;
-          width: 100%;
-          height: 40px;
-          border-radius: 0px 0px 25px 25px;
-       }
-    }
-   }
-}
-
 .container--solution {
   margin-top: 8%;
   margin-bottom: 8%;
   display: flex;
-  .text{
+  .text {
     margin: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 50%;
     .button {
       margin-top: 10px;
-      width: 200px;
       align-self: end;
     }
   }
-  img{
-    border-radius: 25px 0px 0px 25px;
+  img {
     width: 778px;
-    height: 450px;
-  }
-  .button {
-    margin: 20px;
-    width: 250px!important;
-    padding: 10px;
-    border-radius: 15px!important;
+    -webkit-box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.25);
   }
 }
 
-
-.button {
-  margin-top: 10px;
-  font-weight: bold!important;
-  background: #34383E!important;
-  border-radius: 10px!important;
-  color:#F5F5F5!important;
-  width: 200px;
-  align-self: end;
-}
-
-.youtube--embed{
+.solution2 {
+  position: relative;
   display: flex;
   justify-content: center;
-  margin: 5%;
-}
+  text-align: center;
+  flex-direction: column;
 
-.newsletter {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  height: 30vh;
-  background: #9D8A74;
-  form{
+  img {
+    width: 50%;
+  }
+
+  .text-before {
+    position: absolute;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    label{
-      color: white;
-      font-size: 25px
-    }
-    input {
-      border-radius: 25px;
-      border: none;
-      height: 25px;
-      padding: 10px;
-    }
-    .button{
-      width: 50%;
-      background-color: white!important;
-      color: black!important;
-      font-weight: bold;
-      align-self: center;
-      margin-top: 10px;
-      border-radius: 25px!important;
-    }
+    bottom: 28%;
+    background: rgb(245, 245, 245, 0.7);
+    padding: 10px;
+    border-radius: 15px;
+    left: 34%;
+  }
+
+  .text-after {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 28%;
+    background: rgb(245, 245, 245, 0.7);
+    padding: 10px;
+    border-radius: 15px;
+    left: 60%;
   }
 }
 
-h2{
-  font-family: 'Playfair Display';
-  text-align: center
-};
+.button {
+  font-family: "Poppins";
+  font-weight: bold !important;
+  font-size: 20px !important;
+  background: #34383e !important;
+  border-radius: 15px !important;
+  color: #f5f5f5 !important;
+  align-self: end;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
 
-h3{
-  font-family: 'Playfair Display';
-  font-size: 36px;
+h2 {
+  font-family: "Playfair Display";
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-weight: 800;
 }
 p {
   font-size: 26px;

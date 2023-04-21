@@ -15,13 +15,14 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../../assets/logo.png";
+import logofull from "../../assets/logo-full.png";
 
 const pages = [
   "Accueil",
-  "Vos plans",
-  "Nos Meubles",
-  "Nos inspirations",
-  "Qui sommes-nous?",
+  "Nos Artisans",
+  "Notre catalogue",
+  "Nos Inspirations",
+  "Notre Solution",
 ];
 
 const Header = () => {
@@ -113,7 +114,7 @@ const Header = () => {
               textDecoration: "none",
             }}
           >
-            LOGO
+            <img src={logofull} alt="logo" className="logo" />
           </Typography>
           <Box
             sx={{

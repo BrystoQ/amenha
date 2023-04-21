@@ -13,8 +13,8 @@ const Footer = () => (
     </div>
     <div className="link-section">
       <a href="/">Accueil</a>
-      <a href="/">Vos plans</a>
-      <a href="/">Nos Meubles</a>
+      <a href="/">Nos artisans</a>
+      <a href="/">Notre catalogue</a>
       <a href="/">Nos Inspirations</a>
       <a href="/">Notre Solution</a>
     </div>
